@@ -1,0 +1,19 @@
+/* Applique une police plus légère à "Plus" */
+@import url('https://fonts.cdnfonts.com/css/autography-2'); /* Assurez-vous que la police "Autography" est correctement importée */
+
+.plus {
+    font-family: 'Autography', cursive;
+    font-size: 1.5rem; /* Ajustez la taille selon vos besoins */
+    color: #ff4d4d; /* Vous pouvez changer la couleur si vous le souhaitez */
+    font-weight: lighter; /* Applique une version plus légère */
+}
+
+/* Choisir une nouvelle police pour "Horeb" */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); /* Par exemple, Roboto */
+
+.horeb {
+    font-family: 'Roboto', sans-serif; /* Changer la police de "Horeb" */
+    font-size: 2.5rem;
+    font-weight: 500; /* Un poids médium pour donner un effet plus léger */
+    color: #1e3a8a; /* Vous pouvez ajuster la couleur */
+}

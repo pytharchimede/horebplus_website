@@ -1,3 +1,8 @@
+<?php
+
+$link_prefixe = '';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,23 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HorebPlus</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/custom_style.css">
 </head>
 
 <body class="bg-gradient-to-r from-blue-700 via-white to-red-600 min-h-screen text-gray-900">
 
-    <!-- Header -->
-    <header class="flex justify-between items-center p-6 bg-white shadow-md">
-        <h1 class="text-3xl font-bold text-blue-700">HorebPlus</h1>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="#services" class="hover:text-red-600">Services</a></li>
-                <li><a href="#about" class="hover:text-red-600">À propos</a></li>
-                <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
-                <li><a href="#realisations" class="hover:text-red-600">Nos Réalisations</a></li>
-                <li><a href="#portfolio" class="hover:text-red-600">Portfolio</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include $link_prefixe . 'inc/header.php'; ?>
 
     <!-- Hero Section -->
     <section class="text-center py-20 bg-white">
@@ -85,15 +79,33 @@
         </div>
     </section>
 
+    <!-- Demande de Devis -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center text-blue-700">Demande de Devis</h2>
+        <div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow-lg">
+            <p class="text-lg text-gray-700 mb-4">
+                Vous avez besoin d'un devis pour un service ou un produit spécifique ? Cliquez sur le lien ci-dessous pour soumettre votre demande et recevoir une estimation détaillée.
+            </p>
+            <a href="pages/demande_devis.php" class="w-full text-center bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-xl block text-lg font-semibold">
+                Accéder à la page de demande de devis
+            </a>
+        </div>
+    </section>
+
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/+225123456789" target="_blank" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600">
         <img src="assets/icon/social/whatsapp.png" alt="WhatsApp" class="w-10 h-10">
     </a>
 
-    <!-- Footer -->
-    <footer class="text-center py-6 bg-gray-900 text-white">
-        <p>&copy; <?php echo date('Y'); ?> HorebPlus. Tous droits réservés.</p>
-    </footer>
+    <?php include 'inc/footer.php'; ?>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 
