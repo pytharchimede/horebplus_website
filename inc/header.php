@@ -8,11 +8,11 @@
 
         <nav class="hidden md:block">
             <ul class="flex space-x-6">
-                <li><a href="#services" class="hover:text-red-600">Services</a></li>
-                <li><a href="#about" class="hover:text-red-600">À propos</a></li>
-                <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
-                <li><a href="#realisations" class="hover:text-red-600">Nos Réalisations</a></li>
-                <li><a href="#portfolio" class="hover:text-red-600">Portfolio</a></li>
+                <li><a href="pages/services.php" class="hover:text-red-600">Services</a></li>
+                <li><a href="pages/about.php" class="hover:text-red-600">À propos</a></li>
+                <li><a href="pages/contact.php" class="hover:text-red-600">Contact</a></li>
+                <li><a href="pages/realisations.php" class="hover:text-red-600">Nos Réalisations</a></li>
+                <li><a href="pages/portofolio.php" class="hover:text-red-600">Portfolio</a></li>
             </ul>
         </nav>
 
