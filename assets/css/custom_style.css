@@ -17,3 +17,16 @@
     font-weight: 500; /* Un poids médium pour donner un effet plus léger */
     color: #1e3a8a; /* Vous pouvez ajuster la couleur */
 }
+
+
+.carousel-container {
+    width: 100%;
+    height: 250px; /* Hauteur fixe et petite */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image pour qu'elle couvre tout sans être déformée */
+    border-radius: 10px; /* Arrondi des bords pour un effet esthétique */
+}

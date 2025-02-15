@@ -12,11 +12,37 @@ $link_prefixe = '';
     <title>HorebPlus</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/custom_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 
 <body class="bg-gradient-to-r from-blue-700 via-white to-red-600 min-h-screen text-gray-900">
 
     <?php include $link_prefixe . 'inc/header.php'; ?>
+
+
+
+    <!-- Nos Réalisations avec Carrousel -->
+    <section id="realisations" class="py-20 bg-gray-100">
+        <div class="swiper mySwiper carousel-container mx-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide carousel-slide">
+                    <img src="assets/carroussel/slide-1.jpg" alt="Construction" class="w-full h-auto object-cover">
+                </div>
+                <div class="swiper-slide carousel-slide">
+                    <img src="assets/carroussel/slide-2.jpg" alt="Rénovation" class="w-full h-auto object-cover">
+                </div>
+                <div class="swiper-slide carousel-slide">
+                    <img src="assets/carroussel/slide-3.jpg" alt="Aménagement" class="w-full h-auto object-cover">
+                </div>
+            </div>
+
+            <!-- Pagination et navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
 
     <!-- Hero Section -->
     <section class="text-center py-20 bg-white">
@@ -98,6 +124,28 @@ $link_prefixe = '';
     </a>
 
     <?php include 'inc/footer.php'; ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            effect: "slide",
+        });
+    </script>
 
     <script>
         // Toggle mobile menu
