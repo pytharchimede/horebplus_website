@@ -90,13 +90,7 @@ $link_prefixe = '../';
     </section>
 
     <?php include '../inc/footer.php'; ?>
-    <script>
-        // Toggle mobile menu
-        document.getElementById('hamburger').addEventListener('click', function() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
+    <script src="<? $link_prefixe ?>assets/js/all_script.js"></script>
 </body>
 
 </html>
