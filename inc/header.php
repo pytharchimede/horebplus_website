@@ -8,11 +8,12 @@
 
         <nav class="hidden md:block">
             <ul class="flex space-x-6">
-                <li><a href="pages/services.php" class="hover:text-red-600">Services</a></li>
-                <li><a href="pages/about.php" class="hover:text-red-600">À propos</a></li>
-                <li><a href="pages/contact.php" class="hover:text-red-600">Contact</a></li>
-                <li><a href="pages/realisations.php" class="hover:text-red-600">Nos Réalisations</a></li>
-                <li><a href="pages/portofolio.php" class="hover:text-red-600">Portfolio</a></li>
+                <li><a href="<?php echo $link_prefixe; ?>index.php" class="hover:text-red-600">Accueil</a></li>
+                <li><a href="<?php echo $link_prefixe; ?>pages/services.php" class="hover:text-red-600">Services</a></li>
+                <li><a href="<?php echo $link_prefixe; ?>pages/about.php" class="hover:text-red-600">À propos</a></li>
+                <li><a href="<?php echo $link_prefixe; ?>pages/contact.php" class="hover:text-red-600">Contact</a></li>
+                <li><a href="<?php echo $link_prefixe; ?>pages/realisations.php" class="hover:text-red-600">Nos Réalisations</a></li>
+                <li><a href="<?php echo $link_prefixe; ?>pages/portofolio.php" class="hover:text-red-600">Portfolio</a></li>
             </ul>
         </nav>
 
@@ -29,10 +30,11 @@
     <!-- Mobile Menu -->
     <nav id="mobileMenu" class="md:hidden hidden bg-white shadow-md p-4 absolute top-20 left-0 right-0 z-10">
         <ul class="space-y-4">
-            <li><a href="#services" class="block hover:text-red-600">Services</a></li>
-            <li><a href="#about" class="block hover:text-red-600">À propos</a></li>
-            <li><a href="#contact" class="block hover:text-red-600">Contact</a></li>
-            <li><a href="#realisations" class="block hover:text-red-600">Nos Réalisations</a></li>
-            <li><a href="#portfolio" class="block hover:text-red-600">Portfolio</a></li>
+            <li><a href="<?php echo $link_prefixe; ?>index.php" class="block hover:text-red-600">Accueil</a></li>
+            <li><a href="<?php echo $link_prefixe; ?>pages/services.php" class="block hover:text-red-600">Services</a></li>
+            <li><a href="<?php echo $link_prefixe; ?>pages/about.php" class="block hover:text-red-600">À propos</a></li>
+            <li><a href="<?php echo $link_prefixe; ?>pages/contact.php" class="block hover:text-red-600">Contact</a></li>
+            <li><a href="<?php echo $link_prefixe; ?>pages/realisations.php" class="block hover:text-red-600">Nos Réalisations</a></li>
+            <li><a href="<?php echo $link_prefixe; ?>pages/portofolio.php" class="block hover:text-red-600">Portfolio</a></li>
         </ul>
     </nav>

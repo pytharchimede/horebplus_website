@@ -8,7 +8,7 @@ $link_prefixe = '../';
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include $link_prefixe . 'inc/meta.php'; ?>
     <title>Demande de Devis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tiny.cloud/1/nnulrq1kf87s5l81ekcl51y5tzua6sdxolk9wz0rab17fg8j/tinymce/5/tinymce.min.js"></script>

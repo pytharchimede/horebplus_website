@@ -8,8 +8,8 @@ $link_prefixe = '';
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HorebPlus</title>
+    <?php include 'inc/meta.php'; ?>
+    <title>HorebPlus - Expert en Construction, Marketing Digital et Solutions IT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/custom_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
@@ -26,13 +26,13 @@ $link_prefixe = '';
         <div class="swiper mySwiper carousel-container mx-auto">
             <div class="swiper-wrapper">
                 <div class="swiper-slide carousel-slide">
-                    <img src="assets/carroussel/slide-1.jpg" alt="Construction" class="w-full h-auto object-cover">
+                    <img src="assets/carroussel/slide-1.jpg" alt="Construction, marketting digital" class="w-full h-auto object-cover">
                 </div>
                 <div class="swiper-slide carousel-slide">
-                    <img src="assets/carroussel/slide-2.jpg" alt="Rénovation" class="w-full h-auto object-cover">
+                    <img src="assets/carroussel/slide-2.jpg" alt="Rénovation, développement d'applications" class="w-full h-auto object-cover">
                 </div>
                 <div class="swiper-slide carousel-slide">
-                    <img src="assets/carroussel/slide-3.jpg" alt="Aménagement" class="w-full h-auto object-cover">
+                    <img src="assets/carroussel/slide-3.jpg" alt="Aménagement, Reférencement naturel SEO et SEA" class="w-full h-auto object-cover">
                 </div>
             </div>
 
@@ -48,7 +48,11 @@ $link_prefixe = '';
     <section class="text-center py-20 bg-white">
         <h2 class="text-5xl font-bold text-blue-700">Innovation & Expertise</h2>
         <p class="text-xl mt-4 text-gray-700">HorebPlus : BTP, marketing et IT pour des solutions modernes et performantes.</p>
-        <button class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl">Découvrir</button>
+        <a href="pages/portofolio.php">
+            <button class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl">
+                Découvrir
+            </button>
+        </a>
     </section>
 
     <!-- Services -->
