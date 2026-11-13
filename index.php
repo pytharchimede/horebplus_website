@@ -1,0 +1,158 @@
+<?php
+
+$link_prefixe = '';
+
+?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <?php include 'inc/meta.php'; ?>
+    <title>HorebPlus - Expert en Construction, Marketing Digital et Solutions IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/custom_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="bg-gradient-to-r from-blue-700 via-white to-red-600 min-h-screen text-gray-900">
+
+    <?php include $link_prefixe . 'inc/header.php'; ?>
+
+
+
+    <!-- Nos Réalisations avec Carrousel -->
+    <section id="realisations" class="py-20 bg-gray-100">
+        <div class="swiper mySwiper carousel-container mx-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide carousel-slide">
+                    <img src="assets/carroussel/slide-1.jpg" alt="Construction, marketting digital" class="w-full h-auto object-cover">
+                </div>
+                <div class="swiper-slide carousel-slide">
+                    <img src="assets/carroussel/slide-2.jpg" alt="Rénovation, développement d'applications" class="w-full h-auto object-cover">
+                </div>
+                <div class="swiper-slide carousel-slide">
+                    <img src="assets/carroussel/slide-3.jpg" alt="Aménagement, Reférencement naturel SEO et SEA" class="w-full h-auto object-cover">
+                </div>
+            </div>
+
+            <!-- Pagination et navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-white">
+        <h2 class="text-5xl font-bold text-blue-700">Innovation & Expertise</h2>
+        <p class="text-xl mt-4 text-gray-700">HorebPlus : BTP, marketing et IT pour des solutions modernes et performantes.</p>
+        <a href="pages/portofolio.php">
+            <button class="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl">
+                Découvrir
+            </button>
+        </a>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="grid md:grid-cols-3 gap-8 p-10">
+        <div class="bg-blue-700 text-white p-6 rounded-xl text-center">
+            <h3 class="text-2xl font-bold">BTP</h3>
+            <p>Construction, rénovation et aménagement de qualité.</p>
+        </div>
+        <div class="bg-red-600 text-white p-6 rounded-xl text-center">
+            <h3 class="text-2xl font-bold">Marketing</h3>
+            <p>Stratégies de communication et branding digital.</p>
+        </div>
+        <div class="bg-white text-blue-700 shadow-lg p-6 rounded-xl text-center">
+            <h3 class="text-2xl font-bold">Informatique</h3>
+            <p>Maintenance physique et logicielle avancée.</p>
+        </div>
+    </section>
+
+    <!-- Nos Réalisations -->
+    <section id="realisations" class="py-20 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center text-blue-700">Nos Réalisations en BTP</h2>
+        <div class="grid md:grid-cols-3 gap-8 p-10">
+            <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                <h3 class="text-2xl font-bold">Construction</h3>
+                <p>Projets de construction moderne, respectant les normes les plus strictes.</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                <h3 class="text-2xl font-bold">Rénovation</h3>
+                <p>Réaménagement et rénovation d'infrastructures existantes.</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                <h3 class="text-2xl font-bold">Aménagement</h3>
+                <p>Design d'espaces intérieurs et extérieurs pour un confort optimal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20">
+        <h2 class="text-4xl font-bold text-center text-blue-700">Notre Portfolio Digital</h2>
+        <div class="grid md:grid-cols-3 gap-8 p-10">
+            <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                <h3 class="text-2xl font-bold">Web Design</h3>
+                <p>Création de sites web modernes et réactifs pour diverses entreprises.</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                <h3 class="text-2xl font-bold">Marketing Digital</h3>
+                <p>Stratégies de communication digitale sur les réseaux sociaux.</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                <h3 class="text-2xl font-bold">Développement IT</h3>
+                <p>Solutions logicielles adaptées aux besoins spécifiques de chaque client.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demande de Devis -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center text-blue-700">Demande de Devis</h2>
+        <div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow-lg">
+            <p class="text-lg text-gray-700 mb-4">
+                Vous avez besoin d'un devis pour un service ou un produit spécifique ? Cliquez sur le lien ci-dessous pour soumettre votre demande et recevoir une estimation détaillée.
+            </p>
+            <a href="pages/demande_devis.php" class="w-full text-center bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-xl block text-lg font-semibold">
+                Accéder à la page de demande de devis
+            </a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+225123456789" target="_blank" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600">
+        <img src="assets/icon/social/whatsapp.png" alt="WhatsApp" class="w-10 h-10">
+    </a>
+
+    <?php include 'inc/footer.php'; ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            effect: "slide",
+        });
+    </script>
+
+    <script src="<? $link_prefixe ?>assets/js/all_script.js"></script>
+
+</body>
+
+</html>
